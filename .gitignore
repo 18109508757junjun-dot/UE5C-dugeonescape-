@@ -1,0 +1,66 @@
+# .gitignore for Unreal Engine - keep only code (Source/Config/.uproject)
+# This file ignores assets, binaries, build outputs and editor/user files.
+
+# Keep code and project files
+!/*.uproject
+!Source/
+!Source/**
+!Config/
+!Config/**
+
+# Ignore Content (assets) and common large asset types
+Content/
+*.uasset
+*.umap
+*.udk
+*.pak
+*.ucas
+*.utoc
+
+# Ignore build and engine generated folders
+Binaries/
+Build/
+Intermediate/
+DerivedDataCache/
+Saved/
+
+# Ignore packaged outputs
+*.exe
+*.dll
+*.app
+*.so
+*.pdb
+*.lib
+*.pak
+
+# Ignore editor and IDE files
+.vs/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.VC.opendb
+.idea/
+*.iml
+
+# Misc OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Temporary and cache files
+*.log
+*.tmp
+*.cache
+*.swp
+*.bak
+*.backup
+
+# Git LFS metadata (if used)
+.gitattributes
+
+# End of file
